@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Register & Login</title>
+
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<link rel="stylesheet" href="index.css ">
+
+<div class="container">
+
+<div class="card">
+
+<div class="buttons">
+<button onclick="showRegister()">Register</button>
+<button onclick="showLogin()">Login</button>
+</div>
+
+<form id="registerForm">
+
+<h2>Create Account</h2>
+
+<input type="text" id="username" placeholder="User Name" required>
+
+<input type="email" id="email" placeholder="User Email" required>
+
+<input type="tel" id="phone" placeholder="User Phone Number" required>
+
+<textarea id="address" placeholder="User Address" required></textarea>
+
+<input type="password" id="password" placeholder="User Password" required>
+
+<input type="text" value="Admin" readonly id="role">
+
+<button type="submit" class="submitBtn">Register</button>
+
+</form>
+
+<form id="loginForm" style="display:none;">
+
+<h2>Login</h2>
+
+<input type="email" id="loginEmail" placeholder="User Email" required>
+
+<input type="password" id="loginPassword" placeholder="User Password" required>
+
+<button type="submit" class="submitBtn">Login</button>
+
+</form>
+
+<p id="message"></p>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
